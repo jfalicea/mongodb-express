@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <ul>
+      <% students.forEach((student)=>{ %>
+        <li><%= student.name %></li>
+      <% }) %>
+    </ul>
+    <form method="post" action="form_submit">
+      <div class="md-col-4 md-col-offset-2">
+          <input type='text' name='student'>
+          <input class="btn btn-primary" type="submit">
+      </div>
+  </form>
+  </body>
+</html>
